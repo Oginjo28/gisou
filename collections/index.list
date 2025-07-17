@@ -1,62 +1,176 @@
-<div id="projectPages" data-collection-id="{id}">
-  {.section collection}
-    {.repeated section collections}
-      <div class="project {typeLabel}-project" data-url="/{urlId}/" {.if passwordProtected}data-type-protected{.end}>
-      {.collectionTypeNameEquals? gallery}
-        <div class="project-meta">
-          {.section title}<h2 class="project-title">{@}</h2>{.end}
-          {.section description}<div class="project-description">{@}</div>{.end}
+<!-- Hero Section -->
+<div class="sticky-container">
+    <section data-w-id="4f67404f-8607-6ab8-276c-2ad141049632" class="section is-home-hero-v1">
+        <div class="section-bg-image-box">
+            <squarespace:block-field id="heroBackgroundImage" columns="12" />
+            <div class="section-bg-layer"></div>
         </div>
-        <div class="image-list">
-        {.repeated section items}
-          <div class="image">
-            {.image?}<img {@|image-meta} class="loading" data-load="false"/>{.end}
-            {.video?}{@|video load-false}{.end}
-            <div class="image-meta">
-              {.section title}<span class="image-title"><strong>{@}</strong></span>{.end}
-              {.section body}<span class="image-desc">{@}</span>{.end}
+        <div class="padding-global height-full position-relative">
+            <div class="container-large height-full">
+                <div class="home-hero-content-v1">
+                    <div class="home-hero-text-box">
+                        <div class="home-hero-heading-line first">
+                            <div class="hero-heading-text-line first">
+                                <squarespace:block-field id="heroHeading1" columns="12" />
+                            </div>
+                        </div>
+                        <div class="home-hero-heading-line second">
+                            <div class="home-hero-paragraph-box third">
+                                <div class="home-hero-paragraph-line">
+                                    <squarespace:block-field id="heroSubtext1" columns="12" />
+                                </div>
+                            </div>
+                            <div class="hero-heading-text-line second">
+                                <squarespace:block-field id="heroHeading2" columns="12" />
+                            </div>
+                            <div class="home-hero-paragraph-wrapper">
+                                <div class="home-hero-paragraph-box first">
+                                    <div class="home-hero-paragraph-line first">
+                                        <squarespace:block-field id="heroSubtext2" columns="12" />
+                                    </div>
+                                    <div class="home-hero-paragraph-line">
+                                        <squarespace:block-field id="heroSubtext3" columns="12" />
+                                    </div>
+                                </div>
+                                <div class="home-hero-paragraph-box second">
+                                    <div class="home-hero-paragraph-line">
+                                        <squarespace:block-field id="heroSubtext4" columns="12" />
+                                    </div>
+                                    <div class="home-hero-paragraph-line second">
+                                        <squarespace:block-field id="heroSubtext5" columns="12" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-hero-heading-line third">
+                            <div class="hero-heading-text-line third">
+                                <squarespace:block-field id="heroHeading3" columns="12" />
+                            </div>
+                        </div>
+                        <div class="home-hero-cta-box">
+                            <squarespace:block-field id="heroArrowImage" columns="12" />
+                            <div class="home-hero-cta-button-box">
+                                <squarespace:block-field id="heroButton" columns="12" />
+                            </div>
+                        </div>
+                    </div>
+                    <div data-w-id="85cc3fb4-08e6-2f6a-27c9-3e9b1e4b4847" style="opacity: 0;" class="hero-images-wrapper">
+                        <div class="hero-images-box">
+                            <squarespace:block-field id="heroGalleryImages" columns="12" />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        {.end}
         </div>
-      {.or}
-        <!-- Will be fetched on-demand -->
-      {.end}
-      </div>
-    {.end}
-  {.end}
+    </section>
+</div>
 
-  <div class="project-controls">
-    <div>
-      <div id="projectNav"><span class="prev-project">{localizedStrings.prev}</span> / <span class="next-project">{localizedStrings.next}</span></div>
-      <a href="#">Back to {collection.title}</a>
+<!-- About Section -->
+<section data-w-id="c1927801-e7a5-7ffe-f44a-3ffc1189cc3c" class="section is-about-section-v1">
+    <div class="padding-global">
+        <div class="container-large">
+            <div class="about-section-main-box-v1 first">
+                <div class="about-section-box-v1-1">
+                    <div class="about-images-box">
+                        <squarespace:block-field id="aboutImages1" columns="12" />
+                    </div>
+                    <div class="about-section-text-content-v1-1">
+                        <div class="about-section-text-box-v1 first">
+                            <div class="heading-text-box">
+                                <div data-w-id="c1927801-e7a5-7ffe-f44a-3ffc1189cc50" class="heading-text-line first">
+                                    <squarespace:block-field id="aboutHeading1" columns="12" />
+                                </div>
+                            </div>
+                            <div class="horizontal-line-wrapper about-v1-2"><div class="line horizontal"></div></div>
+                        </div>
+                        <div class="about-section-text-box-v1 second">
+                            <div class="horizontal-line-wrapper about-v1-1"><div class="line horizontal"></div></div>
+                            <div class="heading-text-box">
+                                <div class="heading-text-line second">
+                                    <squarespace:block-field id="aboutHeading2" columns="12" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section-main-box-v1 second">
+                <div class="about-section-box-v1-2">
+                    <div class="about-images-box none-in-desktop">
+                        <squarespace:block-field id="aboutImages2" columns="12" />
+                    </div>
+                    <div class="vertical-line-wrapper about-v1-1"><div class="line vertical"></div></div>
+                    <div class="about-section-text-content-v1-2">
+                        <div class="about-section-text-box-v1 third">
+                            <div class="heading-text-line">
+                                <squarespace:block-field id="aboutHeading3" columns="12" />
+                            </div>
+                        </div>
+                        <div class="about-section-text-box-v1 fourth">
+                            <div class="paragraph-text-line">
+                                <squarespace:block-field id="aboutDescription" columns="12" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-images-box none-in-mobile">
+                        <squarespace:block-field id="aboutImages3" columns="12" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
 
-</div>
+<!-- Catalogue Section -->
+<section class="section overflow-x-clip">
+    <div class="padding-global position-relative">
+        <div class="container-large">
+            <div class="catalogue-main-box">
+                <div class="catalogue-grid">
+                    <squarespace:block-field id="catalogueGrid" columns="12" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div id="projectThumbs">
-  <div class="wrapper" data-collection-id="{collection.id}">
-    {.section collection}
-      {.repeated section collections}
-      {.if mainImage}
-        <a class="project {.section tags}{.repeated section @}tag-{@}{.end}{.end}" href="{fullUrl}" >
-          <div>
-            <div class="project-image"><div class="intrinsic"><div class="content-fill">{.section mainImage}<img {@|image-meta} data-load="false"/>{.end}</div></div><div class="project-item-count">{itemCount}</div></div>
-            {.section title}<div class="project-title">{@}</div>{.end}
-          </div>
-        </a>
-      {.end}
-      {.end}
-    {.end}
-  </div>
-  <div class="hidden">
-    {.section collection}
-      {.repeated section collections}
-      {.if mainImage}{.or}
-        <a class="project {.section tags}{.repeated section @}tag-{@}{.end}{.end} hidden" href="{fullUrl}" ></a>
-      {.end}
-      {.end}
-    {.end}
-  </div>
-</div>
+<!-- Contact Section -->
+<section data-w-id="dae44b90-a37d-df66-e2c7-14956043594b" class="section contact-v1">
+    <squarespace:block-field id="contactBackgroundImage" columns="12" />
+    <div class="padding-global padding-section-large">
+        <div class="container-large">
+            <div class="contact-main-wrapper-v1">
+                <div class="contact-main-box-v1">
+                    <div class="contact-heading-box-v1 heading-text-box">
+                        <squarespace:block-field id="contactHeading" columns="12" />
+                    </div>
+                    <div class="contact-form-box-v1">
+                        <squarespace:block-field id="contactForm" columns="12" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section overflow-x-clip">
+    <div class="padding-global padding-section-large">
+        <div class="container-large">
+            <div class="vertical-center-block">
+                <div class="faq-main-box">
+                    <div class="faq-heading-box">
+                        <div class="heading-text-box">
+                            <div class="faq-headings-wrapper">
+                                <squarespace:block-field id="faqHeading" columns="12" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-content-box">
+                        <squarespace:block-field id="faqContent" columns="12" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,82 +1,74 @@
 <!doctype html>
-<html>
-
+<html data-wf-domain="gisou-collective.webflow.io" data-wf-page="{squarespace.page-id}" data-wf-site="gisou-collective" lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  {.if template.mobileStylesEnabled}
-  <meta name="viewport" content="initial-scale=1">
-  {.end}
-  {squarespace-headers}
-  <squarespace:script src="site-bundle.js" combo="false" />
+    <meta charset="utf-8" />
+    <title>{website.metaTitleFormat}</title>
+    <meta name="description" content="{website.metaDescription}" />
+    <meta content="{website.metaTitleFormat}" property="og:title" />
+    <meta content="{website.metaDescription}" property="og:description" />
+    <meta content="{website.logoImageUrl}" property="og:image" />
+    <meta content="{website.metaTitleFormat}" property="twitter:title" />
+    <meta content="{website.metaDescription}" property="twitter:description" />
+    <meta content="{website.logoImageUrl}" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Squarespace" name="generator" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    {squarespace-headers}
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: [
+                    "Playfair Display:regular,500,600,700,800,900",
+                    "Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic:latin,latin-ext,vietnamese",
+                    "Noto Serif Display:100,200,300,regular,500,600,700,800,900",
+                    "Inter:100,200,300,regular,500,600,700,800,900",
+                ],
+            },
+        });
+    </script>
+    <script type="text/javascript">
+        !(function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
+        })(window, document);
+    </script>
 </head>
-{.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
-<body class="{squarespace.page-classes}{.section website}{.section logoImageUrl} logo-image{.or} site-title{.end}{.end}" id="{squarespace.page-id}">
+<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-  <div id="canvas">
-
-    <div id="mobileNav" class="">
-      <div class="wrapper">
-        <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
-      </div>
-    </div>
-    <div id="mobileMenuLink"><a>{localizedStrings.menu}</a></div>
-
-    <header id="header" class="clear">
-
-    {.section website}
-
-      <div id="upper-logo">
-        <h1 class="logo" data-content-field="site-title">
-          <a href="/">{.if logoImageUrl}<img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" />{.or}{siteTitle}{.end}</a>
-        </h1>
-      </div>
-      <script type="module">
-      if (parseInt(Y.one('body').getComputedStyle('width'),10) <= 640) {
-        Y.use('squarespace-ui-base', function(Y) {
-          Y.one("#upper-logo .logo").plug(Y.Squarespace.TextShrink, {
-            parentEl: Y.one('#upper-logo')
-          });
-        });
-      }
-      </script>
-
-      {.section location}
-      <div class="site-info" data-content-field="business-information">
-        {.if addressLine1}<div class="site-address">{addressLine1}</div>{.or}<div class="site-address">{localizedStrings.streetAddress}</div>{.end}
-        {.if addressLine2}<div class="site-city-state">{addressLine2}</div>{.or}<div class="site-city-state">{localizedStrings.cityStateZip}</div>{.end}
-        {.if websiteSettings.contactPhoneNumber}<div class="site-phone">{websiteSettings.contactPhoneNumber}</div>{.or}<div class="site-phone">{localizedStrings.phoneNumber}</div>{.end}
-      </div>
-      {.or}
-      <div class="site-info" data-content-field="business-information">
-        <div class="site-address">{localizedStrings.streetAddress}</div>
-        <div class="site-city-state">{localizedStrings.cityStateZip}</div>
-        <div class="site-phone">{localizedStrings.phoneNumber}</div>
-      </div>
-      {.end}
-
-      <div class="site-tag-line">
-        {.if siteTagLine}<span>{siteTagLine}</span>{.end}
-      </div>
-
-      <div class="custom-info">
-        <squarespace:block-field id="customInfoBlock" columns="12" label="{localizedStrings.headerSubtitle}: {localizedStrings.customContent}" />
-      </div>
-
-      <div id="lower-logo">
-        <h1 class="logo" data-content-field="site-title"><a href="/">{.if logoImageUrl}<img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" />{.or}{siteTitle}{.end}</a></h1>
-      </div>
-      <script type="module">
-        Y.use('squarespace-ui-base', function(Y) {
-          Y.one("#lower-logo .logo").plug(Y.Squarespace.TextShrink, {
-            parentEl: Y.one('#lower-logo')
-          });
-        });
-      </script>
-
-    {.end}
-      <squarespace:navigation navigationId="mainNav" template="navigation" />
-
-    </header>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="nav-content">
+                        <div class="nav-links-wrapper">
+                            <a data-w-id="571c6f19-26aa-91ed-c434-cf11dac0c7f2" href="#" class="nav-link is-menu w-inline-block">
+                                <div class="simple-dot light"></div>
+                                <div>menu</div>
+                            </a>
+                            <squarespace:navigation navigationId="mainNav" template="navigation" />
+                        </div>
+                        <div class="nav-brand-cell">
+                            <a href="/" class="nav-brand w-inline-block">
+                                <div class="nav-brand-logo w-embed">
+                                    <squarespace:block-field id="siteLogo" columns="12" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-links-wrapper right">
+                            <squarespace:navigation navigationId="secondaryNav" template="navigation" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Overlay -->
+            <squarespace:block-field id="mobileMenuOverlay" columns="12" />
+        </nav>
 
     <div class="page-divider top-divider"></div>
 
@@ -93,97 +85,24 @@
             <div class="page-description">{collection.description}</div>
           </div>
         </div>
-      </div>
-      {.or}
-        {.section mainImage}
-        <div id="hero">
-          <div class="page-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
-            <div class="image-wrapper">
-              <img {@|image-meta} />
+        <!-- Main Content -->
+        <main id="main" class="main-wrapper" role="main" data-content-field="main-content">
+            {squarespace.main-content}
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="padding-global padding-section-large">
+                <div class="container-large align-x-center">
+                    <div class="horizontal-line-wrapper for-footer"><div class="line horizontal"></div></div>
+                    <div class="footer-main-box">
+                        <squarespace:block-field id="footerContent" columns="12" />
+                    </div>
+                </div>
             </div>
-            <div class="wrapper">
-              <h1 class="page-title">{collection.title}</h1>
-              <div class="page-description">{collection.description}</div>
-            </div>
-          </div>
-        </div>
-        {.end}
-      {.end}
-    {.end}
-
-    <section id="page" class="clear" role="main" data-content-field="main-content" data-collection-id="{collection.id}" data-collection-id="{collection.id}"{.equal? collection.typeName "page"} data-edit-main-image="Banner"{.end}{.equal? collection.typeName "index"} data-edit-main-image="Banner"{.end}{.equal? collection.typeName "events"} data-edit-main-image="Banner"{.end}{.equal? collection.typeName "blog"} data-edit-main-image="Banner"{.end} >
-
-      <!-- // CATEGORY NAV -->
-      {.section collection}{.equal? typeName "products"}{.section categories}
-      <div id="categoryNav" role="navigation">
-        <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
-        <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
-        <nav class="category-nav">
-          <ul class="nav category-nav-links">
-            <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
-            <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">{localizedStrings.all}</a></li>
-          {.repeated section @}
-            <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
-          {.end}
-          </ul>
-        </nav>
-      </div>
-      {.end}{.end}{.end}
-
-      {squarespace.main-content}
-
-    </section>
-
-    <squarespace:block-field id="{squarespace.page-id}" columns="12" label="{collection.title} {localizedStrings.footerContent}" />
-
-    <!-- <div class="page-divider bottom-divider"></div> -->
-
-    <div class="info-footer-wrapper clear">
-      <div class="info-footer">
-      <squarespace:block-field id="infoFooterBlock" columns="12" label="{localizedStrings.infoFooterContent}" />
-      {.section website}
-        {.if socialAccounts}
-        <div id="socialLinks" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
-          {@|apply sqs-social-links}
-        </div>
-        {.end}
-      {.end}
-      </div>
+        </footer>
     </div>
 
-    <footer id="footer" class="clear">
-      <squarespace:block-field id="footerBlock" columns="12" label="{localizedStrings.footerContent}" />
-    </footer>
-
-  </div>
-
-  <div></div>
-
-  {squarespace-footers}
-
-{.if template.mobileStylesEnabled}{.or}
-  <script type="module">
-    Y.use('node', function() {
-      Y.on('domready', function() {
-        var move;
-        Y.all('.subnav a').each(function(a) {
-          a.on('touchstart', function() {
-            move = false;
-          });
-          a.on('touchmove', function() {
-            move = true;
-          });
-          a.on('touchend', function() {
-            if (move === false) {
-              window.location = a.getAttribute('href');
-            }
-          });
-        });
-      });
-    });
-  </script>
-{.end}
-
+    {squarespace-footers}
 </body>
-
 </html>
