@@ -87,12 +87,12 @@
         </div>
         <!-- Main Content -->
         <main id="main" class="main-wrapper" role="main" data-content-field="main-content">
-            <div style="padding: 40px; text-align: center;">
-                <h1>🎨 Gisou Collective Template</h1>
-                <p>Your custom Squarespace template is loading!</p>
-                <div style="background: #f0f0f0; padding: 20px; margin: 20px 0;">
-                    <h2>Template Status: ✅ Active</h2>
-                    <p>This is your custom Gisou template. The styling will be added next.</p>
+            <div style="padding: 40px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin: 20px; border-radius: 10px;">
+                <h1>🎨 Gisou Collective Template - UPDATED</h1>
+                <p>Your custom Squarespace template is loading! Build: 2:15 PM</p>
+                <div style="background: rgba(255,255,255,0.1); padding: 20px; margin: 20px 0; border-radius: 8px;">
+                    <h2>Template Status: ✅ Active & CSS Fixed</h2>
+                    <p>Import errors should be resolved now. Cache refreshed.</p>
                 </div>
             </div>
             {squarespace.main-content}
