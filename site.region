@@ -87,6 +87,14 @@
         </div>
         <!-- Main Content -->
         <main id="main" class="main-wrapper" role="main" data-content-field="main-content">
+            <div style="padding: 40px; text-align: center;">
+                <h1>🎨 Gisou Collective Template</h1>
+                <p>Your custom Squarespace template is loading!</p>
+                <div style="background: #f0f0f0; padding: 20px; margin: 20px 0;">
+                    <h2>Template Status: ✅ Active</h2>
+                    <p>This is your custom Gisou template. The styling will be added next.</p>
+                </div>
+            </div>
             {squarespace.main-content}
         </main>
 
