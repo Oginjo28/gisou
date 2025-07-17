@@ -39,6 +39,7 @@
     </script>
 </head>
 <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+    <p>Hello, World! - Gisou Template is Working!</p>
 
     <div class="page-wrapper">
         <!-- Navigation -->
